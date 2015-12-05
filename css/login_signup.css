@@ -2,7 +2,6 @@ body {
 	background-image:url(../img/map.png);
 	background-size: 150%;
 	font-family: Segoe UI;
-	z-index: -51;
 }
 a {
 	text-decoration: none;
@@ -13,20 +12,6 @@ a {
 	float: left;
 	margin-top: 10px;
 	margin-left: 10px;
-}
-.side_button:hover {
-	z-index: 100;
-	width: 200px;
-	height: 900px;
-	background: rgba(0, 0, 0, 0.3);
-	margin-left: 0;
-	margin-top: 0;
-	padding-left: 10px;
-	padding-top: 10px;
-	-webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-     -o-transition: all 0.3s ease-out;
-     transition: all 0.3s ease-out;
 }
 header {
 	width: 100%;
@@ -53,25 +38,34 @@ header {
 	display: block;
 	text-align: center;
 }
+.form_name {
+	margin: auto;
+    width: 33%;
+    margin-top: 25px;
+    margin-bottom: -25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+    color: #fff;
+}
 .search {
     background:rgba(50, 50, 50, 0.2);
     margin: auto;
-    margin-top: 20px;
     display: block;
     text-align: center;
-    width: 50%;
+    width: 35%;
 }
-input[type="text"] {
+input[type="text"],
+input[type="username"],
+input[type="password"],
+input[type="email"] {
 	height: 30px;
-	width: 94%;
+	width: 96%;
 	border-radius: 5px;
 	border:0px solid #dbdbdb;
-	float: left;
+	margin-top: 30px;
 }
-#map_pointer {
-	float: right;
-	margin-top: 3px;
-}
+
 ::-webkit-input-placeholder { /* For WebKit browsers */
 	padding-left: 20px;
 	padding-bottom: 20px;
@@ -80,18 +74,47 @@ input[type="text"] {
     font-weight:300;
 }
 .weather_button {
+	width: 34%;
+	margin-left: 33%;
+	margin-right: 33%;
+}
+#login {
 	background-color: #5ecc7b;
-	width: 180px;
-	height: 40px;
+	width: 30%;
+	height: 30px;
 	display: block;
 	text-align: center;
 	margin:auto;
-	margin-top: 80px;
+	margin-top: 10px;
+	padding-top: 4px;
 	border-radius: 6px;
+	float: right;
 }
-.weather_button p {
+.singup {
+	width: 25%;
+	float: left;
+	text-decoration: underline;
+	color: #cfcfcf;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.singup p {
+	margin-top: 0;
+	font-weight: 300;
+	font-size: 0.8em;
+	margin-bottom: 0;
+	float: left;
+	text-decoration: underline;
+	width: 50%;
+}
+#requestpass {
+	margin-left: -20px;
+	width: 40%;
+
+}
+#login p {
 	font-weight: 300;
 	font-size: 1.1em;
-	margin-top: 20px;
-	padding-top: 7px;
+	margin-top: 0;
+
 }
