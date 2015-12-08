@@ -1,4 +1,5 @@
 body {
+	height: 100%;
 	background-size: 150%;
 	font-family: Segoe UI;
 	background:url(../img/lviv.jpg);
@@ -33,16 +34,16 @@ header:hover {
 	margin-left: 10px;
 	display: inline-block;
 }
-
-.side_button:hover {
+.side_button p{
+	margin-top: 0;
+}
+.side_button p:hover {
 	width: 200px;
 	height: 900px;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.9);
-	margin-left: 0;
-	margin-top: 0;
-	padding-left: 10px;
-	padding-top: 10px;
+	margin-left: -10px;
+	margin-top: -10px;
 	-webkit-transition: all 0.3s ease-out;
      -moz-transition: all 0.3s ease-out;
      -o-transition: all 0.3s ease-out;
@@ -123,141 +124,156 @@ input[type="search"] {
 /* ========================
 Location weather information
 =========================== */
-.city_temp,
-#full_forecast {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-
+.city_temp {
+	width: 75%;
+	margin:auto;
 }
-#city_img {
-	height: 140px;
+#city_img,
+#temp_info {
+	width: 40%;
+	height: 100px;
 	font-size: 6em;
 	font-weight: 600;
-	margin-left: 30px;
 	margin-top: 10px;
+	margin-left: 30px;
+	display: inline-block;
+
 }
 #add_img {
 	vertical-align: super;
 }
 #country {
+	width: 100px;
 	height: 50px;
 	font-size: 2em;
 	font-weight: 300;
 	margin-left: 37px;
 	margin-top: 0;
-	margin-bottom: 0;
 }
 #temp_info {
-	height: 85px;
-	margin-top: 30px;
+	font-size: 1em;
+	height: 70px;
 }
 #degree {
-	margin-top: 0;
 	font-size: 4em;
 	font-weight: 600;
-	margin-left: 37px;
 }
 
 /* ========================
 		Forcast area
 =========================== */
-
-#full_forecast {
-	margin-top: 30px;
+#forecast_header {
+	background: rgba(0, 0, 0, 0.6);
+	width: 75%;
+	padding:0;
+	margin:auto;
+	margin-top: 20px;
+	font-weight: 300;
 }
 #forecast {
 	background: rgba(0, 0, 0, 0.6);
-	width: 300px;
-	margin-left: 37px;
-	margin-top: 0;
+	width: 75%;
+	padding:0;
+	margin:auto;
 	font-weight: 300;
-	padding-left: 0;
-	float: left;
+	height: 300px;
+	overflow: scroll;
 }
-#forecast_header {
-	font-size: 1.5em;
+
+.periods,
+.column_name {
+	width: 90%;
+	height: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	list-style-type: none;
+	border-bottom: 1px solid;
+
+}
+
+.periods p {
+	width: 90px;
+	display: inline-block;
+}
+.periods p:first-child {
+	font-weight: 600;
+}
+
+.column_name p,
+.forecast_row_1 p,
+.forecast_row_2 p,
+.forecast_row_3 p,
+.forecast_row_4 p,
+.forecast_row_5 p,
+.forecast_row_6 p,
+.forecast_row_7 p,
+.forecast_row_8 p,
+.forecast_row_9 p,
+.forecast_row_10 p,
+.forecast_row_11 p,
+.forecast_row_12 p,
+.forecast_row_13 p,
+.forecast_row_14 p,
+.forecast_row_15 p,
+.forecast_row_16 p,
+.forecast_row_17 p {
+	width: 15%;
 	text-align: center;
-	margin-bottom: 10px;
+	display: inline-block;
 }
+
+.forecast_row_1 {
+	margin-top: 20px;
+}
+
 .forecast_row_1,
 .forecast_row_2,
 .forecast_row_3,
 .forecast_row_4,
-.forecast_row_5 {
+.forecast_row_5,
+.forecast_row_6,
+.forecast_row_7,
+.forecast_row_8,
+.forecast_row_9,
+.forecast_row_10,
+.forecast_row_11,
+.forecast_row_12,
+.forecast_row_13,
+.forecast_row_14,
+.forecast_row_15,
+.forecast_row_16,
+.forecast_row_17 {
 	width: 90%;
 	margin-left: 5%;
+	margin-right: 5%;
 	height: 50px;
 	list-style-type: none;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid grey;
 	-webkit-font-smoothing: antialiased;
-	background-image: none, url(../img/pointer.png);
+	background-image: none;
 	background-position: 50% 50%, 50% 50%;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 22px 22px, 22px 22px;
 }
 
-.day {
-	width: 40%;
-	margin-top: 14px;
-	float: left;
-}
-.temp {
-	width: 30%;
-	float: right;
-	margin-top: 14px;
-}
-.hi-c,
-.lo-c {
-	width: 50%;
-}
-.lo-c {
-	float: right;
-}
-
-#ex_forecast {
-	width: 100%;
-	text-align: center;
-	padding-bottom: 20px;
-}
-#ex_forecast a {
-	color: #fff;
-	font-weight: 400;
-	text-decoration: underline;
-}
-
 /* ========================
-		Details area
+		Footer
 =========================== */
-#full_details {
-	width: 700px;
-	height: 400px;
-	margin-left: 20px;
-	float: left;
-
+#body_height {
+	height: 100%;
 }
-#details {
-	width: 700px;
-	height: 150px;
+footer {
+	margin-top: 75px;
+	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	height: 30px;
 	background: rgba(0, 0, 0, 0.6);
-	margin-left: 20px;
-	float: left;
 }
-#more_details {
-	margin-left: 20px;
-	width: 700px;
-
-
-}
-#sun_moon,
-#wind {
-	width: 320px;
-	height: 150px;
-	background: rgba(0, 0, 0, 0.6);
-	float: left;
-	margin-top: 40px;
-
-}
-#wind {
-	float: right;
+footer p {
+	width: 300px;
+	margin: auto;
+	padding-top: 5px;
+	color: #D7D8D9;
+	font-size: 300;
 }
