@@ -194,7 +194,7 @@ Location weather information
 	width: 90px;
 	display: inline-block;
 }
-.periods p:first-child {
+.periods p:nth-child(3) {
 	font-weight: 600;
 }
 
