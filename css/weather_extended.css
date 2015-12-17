@@ -1,0 +1,248 @@
+body {
+	background-size: 150%;
+	font-family: Segoe UI;
+	background:url(../img/lviv.jpg);
+	background-position: absolute;
+	background-size: 1480px auto;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* ========================
+		Header
+=========================== */
+
+
+header {
+	width: 100%;
+	height: 45px;
+	background: rgba(0, 0, 0, 0.2);
+	display: block;
+}
+header:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+.side_button {
+	width: 25px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}
+.side_button p{
+	margin-top: 0;
+}
+.side_button p:hover {
+	width: 200px;
+	height: 900px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.2);
+	margin-left: -10px;
+	margin-top: -10px;
+	-webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     -o-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+}
+#logo{
+	width: 58px;
+	display: inline-block;
+	margin-top: 9px;
+	margin-left: 20px;
+}
+
+.search {
+    background:none;
+    display: inline-block;
+    width: 25%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 8px;
+    vertical-align: top;
+}
+input[type="search"] {
+	height: 25px;
+	width: 60%;
+	border-radius: 5px;
+	border:0px solid #dbdbdb;
+	background: #fff;
+	float: left;
+}
+.search a{
+	margin-left: 5px;
+	margin-top: 4px;
+	float: left;
+}
+::-webkit-input-placeholder { /* For WebKit browsers */
+	padding-left: 20px;
+	padding-bottom: 20px;
+    color:    #cfcfcf;
+    font-weight:300;
+}
+.weather_button,
+.button {
+	float: right;
+	width: 140px;
+	height: 30px;
+	margin-top: 7px;
+	background-color: #5ecc7b;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+.weather_button p, 
+.button p {
+	display: block;
+	text-align: center;
+	height: 0.8em;
+	margin-top: 4px;
+	font-weight: 300;
+}
+
+/* ========================
+		Degrees
+=========================== */
+
+#c_f {
+	width: 100%;
+	height: 40px;
+	display: block;
+
+}
+#c_f a {
+	float: right;
+	color: #fff;
+	margin-right: 30px;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+/* ========================
+Location weather information
+=========================== */
+.city_temp {
+	width: 75%;
+	margin:auto;
+}
+#city_img,
+#temp_info {
+	width: 40%;
+	height: 100px;
+	font-size: 6em;
+	font-weight: 600;
+	margin-top: -50px;
+	margin-left: 30px;
+	display: inline-block;
+}
+#add_img {
+	vertical-align: super;
+}
+#country {
+	width: 100px;
+	height: 50px;
+	font-size: 2em;
+	font-weight: 300;
+	margin-left: 37px;
+	margin-top: 0;
+}
+#temp_info {
+	font-size: 1em;
+	height: 70px;
+}
+#degree {
+	font-size: 4em;
+	font-weight: 600;
+}
+
+/* ========================
+		Forcast area
+=========================== */
+#forecast_header {
+	background: rgba(0, 0, 0, 0.6);
+	width: 75%;
+	padding:0;
+	margin:auto;
+	margin-top: 20px;
+	font-weight: 300;
+}
+#forecast {
+	background: rgba(0, 0, 0, 0.6);
+	width: 75%;
+	padding:0;
+	margin:auto;
+	font-weight: 300;
+	height: 300px;
+	overflow: scroll;
+}
+
+.periods,
+.column_name {
+	width: 90%;
+	height: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	list-style-type: none;
+	border-bottom: 1px solid;
+
+}
+
+.periods p {
+	width: 90px;
+	display: inline-block;
+}
+.periods p:first-child {
+	font-weight: 600;
+}
+
+.column_name p,
+li > p {
+	width: 15%;
+	text-align: center;
+	display: inline-block;
+}
+
+.forecast_row_1 {
+	margin-top: 20px;
+}
+
+ul > li {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 50px;
+	list-style-type: none;
+	border-bottom: 1px solid grey;
+	-webkit-font-smoothing: antialiased;
+	background-image: none;
+	background-position: 50% 50%, 50% 50%;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 22px 22px, 22px 22px;
+}
+ul li:last-child {
+	border-bottom: none;
+	margin-bottom: 10px;
+}
+/* ========================
+		Footer
+=========================== */
+
+footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 0px;
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: rgba(0, 0, 0, 0.6);
+}
+footer p {
+	width: 300px;
+	margin: auto;
+	padding-top: 5px;
+	color: #D7D8D9;
+	font-size: 300;
+}
