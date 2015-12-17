@@ -34,24 +34,29 @@ $(document).ready(function(){
         }
     }
 
-	$('#second_form').submit(function(e){
+	$('#second_form').submit(function(){
 		getWeather($('#search_string').val());
-		e.preventDefault();
+		return false;
 	})
-     $('#main_form').submit(function(e){
+     $('#main_form').submit(function(){
         $('#weather_btn').trigger('click');
-        e.preventDefault();
+        return false;
     })
    
 //============ Button next page
-    $('#weather_btn').click(function(e){
-       e.preventDefault();
+   $('#weather_btn').click(function(){
        if($('.search input').val()==''){
             return false;
        }
        window.location.href = $(this).prop('href') + "?q=" + $('.search input').val();
-    })
+       return false;
+    });
+    $('#ex_forecast_link').click(function(e){
+       e.preventDefault();
+       window.location.href = $(this).prop('href') + "?q=" + $('#city').html();
+    })  ;
 //======================================
+
 	$('#get_weather_btn').click(function(){
         getWeather($('#search_string').val());
     });
@@ -88,7 +93,7 @@ $(document).ready(function(){
             );
             i++;
         });
-    }	
+    }
 	function addWeather(icon, day, condition, temp, country, count){
         var item = '.forecast_row_' + count;
 		$(item + ' .day').html(day);

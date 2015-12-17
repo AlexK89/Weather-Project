@@ -158,7 +158,7 @@ Location weather information
 	font-size: 4em;
 	font-weight: 600;
 	margin-left: 37px;
-	
+	background-image: none;
 }
 
 /* ========================
@@ -217,12 +217,12 @@ Location weather information
 	float: right;
 }
 
-#ex_forecast {
+.ex_forecast {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 20px;
 }
-#ex_forecast a {
+.ex_forecast a {
 	color: #fff;
 	font-weight: 400;
 	text-decoration: underline;
