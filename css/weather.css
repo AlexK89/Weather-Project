@@ -1,0 +1,265 @@
+body {
+	background-size: 150%;
+	font-family: Segoe UI;
+	background:url(../img/lviv.jpg);
+	background-position: absolute;
+	background-size: 1480px auto;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* ========================
+		Header
+=========================== */
+
+
+header {
+	width: 100%;
+	height: 45px;
+	background: rgba(0, 0, 0, 0.2);
+	display: block;
+}
+header:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+.side_button {
+	width: 25px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.side_button:hover {
+	width: 200px;
+	height: 900px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.2);
+	margin-left: 0;
+	margin-top: 0;
+	padding-left: 10px;
+	padding-top: 10px;
+	-webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+     -o-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+}
+#logo{
+	width: 58px;
+	display: inline-block;
+	margin-top: 9px;
+	margin-left: 20px;
+}
+
+.search {
+    background:none;
+    display: inline-block;
+    width: 25%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 8px;
+    vertical-align: top;
+}
+input[type="search"] {
+	height: 25px;
+	width: 60%;
+	border-radius: 5px;
+	border:0px solid #dbdbdb;
+	background: #fff;
+	float: left;
+	color: #000;
+}
+.search a{
+	margin-left: 5px;
+	margin-top: 4px;
+	float: left;
+}
+::-webkit-input-placeholder { /* For WebKit browsers */
+	padding-left: 20px;
+	padding-bottom: 20px;
+    color:    #cfcfcf;
+    font-weight:300;
+}
+.weather_button,
+.button {
+	float: right;
+	width: 140px;
+	height: 30px;
+	margin-top: 7px;
+	background-color: #5ecc7b;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+.weather_button p, 
+.button p {
+	display: block;
+	text-align: center;
+	height: 0.8em;
+	margin-top: 4px;
+	font-weight: 300;
+}
+
+/* ========================
+		Degrees
+=========================== */
+
+#c_f {
+	width: 100%;
+	height: 40px;
+	display: block;
+
+}
+#c_f a {
+	float: right;
+	color: #fff;
+	margin-right: 30px;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+/* ========================
+Location weather information
+=========================== */
+.city_temp,
+#full_forecast {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+#city_img {
+	height: 140px;
+	font-size: 6em;
+	font-weight: 600;
+	margin-left: 30px;
+	margin-top: -50px;
+}
+#add_img {
+	vertical-align: super;
+}
+#country {
+	height: 50px;
+	font-size: 2em;
+	font-weight: 300;
+	margin-left: 37px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#temp_info {
+	height: 85px;
+
+}
+#degree {
+	margin-top: 0;
+	font-size: 4em;
+	font-weight: 600;
+	margin-left: 37px;
+	background-image: none;
+}
+
+/* ========================
+		Forcast area
+=========================== */
+
+#full_forecast {
+	margin-top: 30px;
+}
+#forecast {
+	background: rgba(0, 0, 0, 0.6);
+	width: 300px;
+	margin-left: 37px;
+	margin-top: 0;
+	font-weight: 300;
+	padding-left: 0;
+	float: left;
+}
+#forecast_header {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.forecast_row_1,
+.forecast_row_2,
+.forecast_row_3,
+.forecast_row_4,
+.forecast_row_5 {
+	width: 90%;
+	margin-left: 5%;
+	height: 50px;
+	list-style-type: none;
+	border-bottom: 1px solid;
+	-webkit-font-smoothing: antialiased;
+	background-image: url(../img/pointer.png);
+	background-position: 50% 50%, 50% 50%;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 22px 22px, 22px 22px;
+}
+
+.day {
+	width: 40%;
+	margin-top: 14px;
+	float: left;
+}
+.temp {
+	width: 30%;
+	float: right;
+	margin-top: 14px;
+}
+.hi-c,
+.lo-c {
+	width: 50%;
+}
+.lo-c {
+	float: right;
+}
+
+.ex_forecast {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.ex_forecast a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+/* ========================
+		Details area
+=========================== */
+#full_details {
+	width: 700px;
+	height: 400px;
+	margin-left: 20px;
+	float: left;
+
+}
+#details {
+	width: 700px;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.6);
+	margin-left: 20px;
+	float: left;
+}
+#more_details {
+	margin-left: 20px;
+	width: 700px;
+
+
+}
+#sun_moon,
+#wind {
+	width: 320px;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.6);
+	float: left;
+	margin-top: 40px;
+
+}
+#wind {
+	float: right;
+}
