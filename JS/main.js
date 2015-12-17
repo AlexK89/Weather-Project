@@ -42,6 +42,8 @@ $(document).ready(function(){
         $('#weather_btn').trigger('click');
         e.preventDefault();
     })
+   
+//============ Button next page
     $('#weather_btn').click(function(e){
        e.preventDefault();
        if($('.search input').val()==''){
@@ -49,7 +51,7 @@ $(document).ready(function(){
        }
        window.location.href = $(this).prop('href') + "?q=" + $('.search input').val();
     })
-
+//======================================
 	$('#get_weather_btn').click(function(){
         getWeather($('#search_string').val());
     });
@@ -69,8 +71,8 @@ $(document).ready(function(){
         var offset = (new Date()).getTimezoneOffset()*1000; // Відхилення від UTC в секундах
         var city = data.city.name;
         var country = data.city.country;
-        $("#weatherTable tr:not(:first)").remove();
         $('#city').html(city);
+        $('#degree').html(Math.round(data.list[0].temp.day));
 		var i = 1;
         $.each(data.list, function(){
             // "this" тримає об'єкт прогнозу звідси: http://openweathermap.org/forecast16
@@ -80,17 +82,21 @@ $(document).ready(function(){
                 moment(localTime).format('dddd'),	// Використовуємо moment.js для представлення дати
                 this.weather[0].description,
                 this.temp,
+                data.city.country,
+
                 i
             );
             i++;
         });
     }	
-	function addWeather(icon, day, condition, temp, count){
-		var item = '.forecast_row_' + count;
+	function addWeather(icon, day, condition, temp, country, count){
+        var item = '.forecast_row_' + count;
 		$(item + ' .day').html(day);
         $(item + ' .hi-c').html(Math.round(temp.max) + '&deg;');
         $(item + ' .lo-c').html(Math.round(temp.min) + '&deg;');
-    }
-});
+        $('#country').html(country);
+        $(item).css('background-image', 'url(img/weather_ico/' + icon + '.png)');
+     }
+});  
 
 
